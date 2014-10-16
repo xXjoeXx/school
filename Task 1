@@ -26,7 +26,7 @@ int main() {
 
 	//Case 1 rectangel
 	case '1':
-		cout <<"You have chosen the program 2(rectangel)"<< endl;
+		cout <<"You have chosen the program 1(rectangel)"<< endl;
 		cout <<"How much is the first side (length)?"<<endl;
 		cin>>num1;
 		cout <<"How much is the second side(width)"<<endl;
