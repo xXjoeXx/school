@@ -1,0 +1,22 @@
+//============================================================================
+// Name        : task3.cpp
+// Author      : Daniel hauser
+// Version     : nope
+// Copyright   : GNU public 3
+// Description : Task 3 16.10.2014
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int random;
+
+int main() {
+	cout << "Type in a random number."<<endl;
+	cin>>random;
+
+	cout<<"The last digit is "<<random%10<<endl;
+
+
+	return 0;
+}
