@@ -1,0 +1,63 @@
+//============================================================================
+// Name        : task1.cpp
+// Author      : Daniel Hauser
+// Version     : nope
+// Copyright   : Your copyright notice
+// Description : Task 1 16.10.14
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+//some var
+
+
+double num1;
+double num2;
+double sum;
+char program;
+double pi=3.1415926535;
+
+int main() {
+
+	cout << "Please Choose the program.  (note: the program number is equal to the program number given in the task. "<< endl;
+	cin >>program;
+	switch(program){
+
+	//Case 1 rectangel
+	case '1':
+		cout <<"You have chosen the program 2(rectangel)"<< endl;
+		cout <<"How much is the first side (length)?"<<endl;
+		cin>>num1;
+		cout <<"How much is the second side(width)"<<endl;
+		cin>>num2;
+        sum=num1*num2;
+		cout <<"The area is "<<sum<< endl;
+		break;
+
+	//Case2
+	case '2':
+		cout <<"You have chosen the program 2(triangel)"<< endl;
+		cout <<"How much is the first side (length)?"<<endl;
+		cin>>num1;
+		cout <<"How much is the second side(width)"<<endl;
+		cin>>num2;
+        sum=num1*num2*0.5;
+		cout <<"The area is "<<sum<< endl;
+		break;
+	//case3
+	case '3':
+		cout <<"You have chosen the program 3(circle)"<< endl;
+		cout <<"How much is the radius?"<<endl;
+		cin>>num1;
+        sum=num1*num1*pi;
+		cout <<"The area is "<<sum<< endl;
+		break;
+	default:
+		cout<<"Wrong."<<endl;
+
+		return 1;
+
+	}
+	return 0;
+}
