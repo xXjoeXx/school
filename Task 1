@@ -20,7 +20,7 @@ double pi=3.1415926535;
 
 int main() {
 
-	cout << "Please Choose the program.  (note: the program number is equal to the program number given in the task. "<< endl;
+	cout << "Please choose the program.  (note: the program number is equal to the program number given in the task. "<< endl;
 	cin >>program;
 	switch(program){
 
