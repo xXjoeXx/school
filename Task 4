@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : task4.cpp
+// Author      : Daniel hauser
+// Version     : nope
+// Copyright   : GNU public 3
+// Description : Task 4 16.10.2014
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+
+char chara;
+
+int main() {
+
+	cout<<"Type in a random character"<<endl;
+	cin>>chara;
+	cout << int(chara) << " " << hex << int (chara) << endl;
+
+
+	return 0;
+}
