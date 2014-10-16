@@ -1,0 +1,26 @@
+//============================================================================
+// Name        : task2.cpp
+// Author      : Daniel Hauser
+// Version     : nope
+// Copyright   : Your copyright notice
+// Description : Task 2 16.10.2014
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+
+double use;
+double km;
+double usekm;
+
+int main() {
+	cout << "Please enter fuel use"<<endl;
+	cin>>use;
+	cout <<"Please enter the amount of kilometer you have driven"<<endl;
+	cin>>km;
+usekm =	(use/km)*100;
+	cout<<"The fuel use per 100Km is "<<usekm<<endl;
+
+	return 0;
+}
