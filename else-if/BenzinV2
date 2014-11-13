@@ -1,0 +1,38 @@
+//============================================================================
+// Name        : BenzinV2.cpp
+// Author      : Daniel Hauser
+// Version     : 0.1
+// Copyright   : Copyright © 2014 by Daniel Hauser
+// Description : school stuff
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+//define some vars
+	double km;
+	double fuel;
+	double result;
+//get info
+	cout<<"Enter the kilometer you drove"<<endl;
+	cin>>km;
+	cout<<"Enter the used Fuel"<<endl;
+	cin>>fuel;
+//
+	if (fuel <=0){
+//check for valid data
+	cout<<"Nope, you can´t do this, please enter valid Data."<<endl;
+	cout<<"The programm ends here."<<endl;
+	return 0;
+	}
+	else
+	{
+//calculate and console output
+		result = fuel/km*100;
+		cout<<"You drove "<<km<<"km."<<endl<<"You used "<<fuel<<"l"<<endl;
+		cout<<"You used "<<result<<" l/100km"<<endl;
+	}
+	return 0;
+}
