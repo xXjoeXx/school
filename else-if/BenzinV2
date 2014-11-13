@@ -24,7 +24,7 @@ int main() {
 	if (fuel <=0){
 
 	cout<<"Nope, you can´t do this, please enter valid Data."<<endl;
-	cout<<"The programm ends here."<<endl;
+	cout<<"The program ends here."<<endl;
 	return 0;
 	}
 	else
