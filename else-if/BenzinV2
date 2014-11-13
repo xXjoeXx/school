@@ -18,11 +18,11 @@ int main() {
 //get info
 	cout<<"Enter the kilometer you drove"<<endl;
 	cin>>km;
-	cout<<"Enter the used Fuel"<<endl;
+	cout<<"Enter the used fuel"<<endl;
 	cin>>fuel;
-//
-	if (fuel <=0){
 //check for valid data
+	if (fuel <=0){
+
 	cout<<"Nope, you can´t do this, please enter valid Data."<<endl;
 	cout<<"The programm ends here."<<endl;
 	return 0;
