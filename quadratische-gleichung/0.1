@@ -1,0 +1,42 @@
+Enter file contents here//============================================================================
+// Name        : sqrt.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : NEIN
+//============================================================================
+
+#include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main() {
+
+	double a, b, c;
+	double ns1, ns2, r1, r2, nr1;
+
+cout<<"Bitte geben Sie die Werte a, b und c an: "<<endl;
+cout<<"Geben Sie zuerst den Faktor a an: ";
+cin>> a;
+cout<<"Geben Sie zunächst den Faktor b an: ";
+cin>> b;
+cout<<"Geben Sie jetzt den Faktor c an (falls nicht vorhanden, geben Sie 0 an): ";
+cin>> c;
+
+//Rechnung mit pq-Formel
+
+
+nr1 = (b / 2.0) * (b / 2.0) - c;
+
+
+if (nr1 < 0){
+	cout<<"Es gibt keine reelen Nullstellen."<<endl;
+			return 0;
+}
+
+r1 = -b / 2.0  + sqrt((b / 2.0) * (b / 2.0) - c);
+
+	return 0;
+}
