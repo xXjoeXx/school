@@ -1,41 +1,29 @@
-//============================================================================
-// Name        : sqrt.cpp
-// Author      :
-// Version     :
-// Copyright   : Your copyright notice
-// Description : NEIN
-//============================================================================
-
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
-int main() {
+int main(){
 	double a, b, c;
-	double ns1, ns2, r1, r2, nr1;
-cout<<"Bitte geben Sie die Werte a, b und c an: "<<endl;
-cout<<"Geben Sie zuerst den Faktor a an: ";
-cin>> a;
-cout<<"Geben Sie zunächst den Faktor b an: ";
-cin>> b;
-cout<<"Geben Sie jetzt den Faktor c an (falls nicht vorhanden, geben Sie 0 an): ";
-cin>> c;
-//Rechnung mit pq-Formel
-nr1 = (b / 2.0) * (b / 2.0) - c;
-if (nr1 < 0){
-	cout<<"Es gibt keine reelen Nullstellen."<<endl;
-			return 0;
-}
-else  {
-	r1 = -b / 2.0  + sqrt((b / 2.0) * (b / 2.0) - c);
-	r2 = -b / 2.0  - sqrt((b / 2.0) * (b / 2.0) - c);
+	cout << "bitte a eingeben: " << flush;
+	cin >> a;
+	cout << "bitte b eingeben: " << flush;
+	cin >> b;
+	cout << "bitte c eingeben: " << flush;
+	cin >> c;
 
-	if (r1==r2){
-		cout <<"Die Funktion berührt die X bei"<<r1;
+	double radiant = b * b- 4 * a * c;
+	if(radiant < 0){
+		cout << "keine reelen nullstellen" << flush;
+	}else{
+		double d = sqrt(radiant);
+		double x0 = (-b + d) / (2 * a);
+		double x1 = (-b - d) / (2 * a);
+		if(x0 == x1){
+			cout << "berührungspunkt bei " << x0 << flush;
+		}else{
+			cout << "x0: " << x0 << endl;
+			cout << "x1: " << x1 << flush;
+		}
 	}
-	cout<<"Die Nullstellen sind bei x1 = "<<r1<<" und bei x2 = "<<r2;
-}
-//PQ-Formel:
-//r1 = -b / 2.0  + sqrt((b / 2.0) * (b / 2.0) - c);
-	return 0;
 }
