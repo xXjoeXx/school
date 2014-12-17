@@ -1,0 +1,41 @@
+//============================================================================
+// Name        : zigarreten.cpp
+// Author      : Daniel Hauser
+// Version     :
+// Copyright   : I would not recommend to copy this...
+// Description : Zigarettenautomat
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	char frage;
+	int alter;
+
+	cout<<"Willst du Zigaretten? (j)a oder (n)ein"<<flush;
+	cin>>frage;
+	switch(frage)
+	{
+	case 'j':
+		cout<<"Wie viele Jahre lebst du bereits auf Terra?"<<flush;
+		cin>>alter;
+
+		switch(alter<18);{
+			case true:
+			cout<<"Hah ein Betrüger, du kannst dich nicht vor uns verstecken."<<flush;
+			break;
+
+			case false:
+			cout<<"Ok ich gebe dir welche. Du hast mir Zwar nicht gesagt \nwie viele du möchtest, aber hier hast 4 Packungen."<<flush;
+			cout<<"Es ist ja nicht mal so das du ein Beweis für dein Alter \ngegeben hast. Viel Spaß. Stirb an Krebs."<<flush;
+			break;
+		}
+	case 'n':
+		cout<<"Ok, dann such dir Freunde."<<flush;
+		break;
+	default:
+		cout<<"Das Programm ist verwirrt. Es hat sich vor \n Verwirrung selbst verletzt."<<flush;
+	}
+	return 0;
+}
